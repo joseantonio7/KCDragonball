@@ -12,7 +12,7 @@
 		61B2DAB72CA8AA8A0003D46D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAB62CA8AA8A0003D46D /* ViewController.swift */; };
 		61B2DABC2CA8AA8D0003D46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B2DABB2CA8AA8D0003D46D /* Assets.xcassets */; };
 		61B2DABF2CA8AA8D0003D46D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 61B2DABE2CA8AA8D0003D46D /* Base */; };
-		61B2DACA2CA8AA8D0003D46D /* KCDragonballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAC92CA8AA8D0003D46D /* KCDragonballTests.swift */; };
+		61B2DACA2CA8AA8D0003D46D /* NetworkModelHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAC92CA8AA8D0003D46D /* NetworkModelHeroesTests.swift */; };
 		61B2DAD42CA8AA8D0003D46D /* KCDragonballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAD32CA8AA8D0003D46D /* KCDragonballUITests.swift */; };
 		61B2DAD62CA8AA8D0003D46D /* KCDragonballUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAD52CA8AA8D0003D46D /* KCDragonballUITestsLaunchTests.swift */; };
 		61B2DAE42CA8B19A0003D46D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAE32CA8B19A0003D46D /* APIClient.swift */; };
@@ -32,6 +32,9 @@
 		61B2DB0A2CA93A990003D46D /* TransformationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DB072CA93A990003D46D /* TransformationsListViewController.swift */; };
 		61B2DB0D2CA93DFE0003D46D /* TransformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61B2DB0C2CA93DFE0003D46D /* TransformationTableViewCell.xib */; };
 		61B2DB0E2CA93DFE0003D46D /* TransformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DB0B2CA93DFE0003D46D /* TransformationTableViewCell.swift */; };
+		61B2DB112CA9915E0003D46D /* APIClientProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DB102CA9915E0003D46D /* APIClientProtocolMock.swift */; };
+		61B2DB132CA99D880003D46D /* NetworkModelLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DB122CA99D880003D46D /* NetworkModelLoginTests.swift */; };
+		61B2DB152CA99F920003D46D /* NetworkModelTransformationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DB142CA99F920003D46D /* NetworkModelTransformationsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +63,7 @@
 		61B2DABE2CA8AA8D0003D46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61B2DAC02CA8AA8D0003D46D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61B2DAC52CA8AA8D0003D46D /* KCDragonballTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCDragonballTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		61B2DAC92CA8AA8D0003D46D /* KCDragonballTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCDragonballTests.swift; sourceTree = "<group>"; };
+		61B2DAC92CA8AA8D0003D46D /* NetworkModelHeroesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelHeroesTests.swift; sourceTree = "<group>"; };
 		61B2DACF2CA8AA8D0003D46D /* KCDragonballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCDragonballUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B2DAD32CA8AA8D0003D46D /* KCDragonballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCDragonballUITests.swift; sourceTree = "<group>"; };
 		61B2DAD52CA8AA8D0003D46D /* KCDragonballUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCDragonballUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -81,6 +84,9 @@
 		61B2DB082CA93A990003D46D /* TransformationslListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationslListViewController.xib; sourceTree = "<group>"; };
 		61B2DB0B2CA93DFE0003D46D /* TransformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationTableViewCell.swift; sourceTree = "<group>"; };
 		61B2DB0C2CA93DFE0003D46D /* TransformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationTableViewCell.xib; sourceTree = "<group>"; };
+		61B2DB102CA9915E0003D46D /* APIClientProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocolMock.swift; sourceTree = "<group>"; };
+		61B2DB122CA99D880003D46D /* NetworkModelLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelLoginTests.swift; sourceTree = "<group>"; };
+		61B2DB142CA99F920003D46D /* NetworkModelTransformationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTransformationsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +153,10 @@
 		61B2DAC82CA8AA8D0003D46D /* KCDragonballTests */ = {
 			isa = PBXGroup;
 			children = (
-				61B2DAC92CA8AA8D0003D46D /* KCDragonballTests.swift */,
+				61B2DB0F2CA991240003D46D /* Helpers */,
+				61B2DB122CA99D880003D46D /* NetworkModelLoginTests.swift */,
+				61B2DAC92CA8AA8D0003D46D /* NetworkModelHeroesTests.swift */,
+				61B2DB142CA99F920003D46D /* NetworkModelTransformationsTests.swift */,
 			);
 			path = KCDragonballTests;
 			sourceTree = "<group>";
@@ -213,6 +222,14 @@
 				61B2DB032CA911EC0003D46D /* HeroDetailViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		61B2DB0F2CA991240003D46D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				61B2DB102CA9915E0003D46D /* APIClientProtocolMock.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,7 +389,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61B2DACA2CA8AA8D0003D46D /* KCDragonballTests.swift in Sources */,
+				61B2DB132CA99D880003D46D /* NetworkModelLoginTests.swift in Sources */,
+				61B2DB152CA99F920003D46D /* NetworkModelTransformationsTests.swift in Sources */,
+				61B2DACA2CA8AA8D0003D46D /* NetworkModelHeroesTests.swift in Sources */,
+				61B2DB112CA9915E0003D46D /* APIClientProtocolMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
