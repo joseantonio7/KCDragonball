@@ -13,7 +13,7 @@ final class HeroesListViewController: UITableViewController {
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Hero>
     
     // MARK: - Model
-    private let heroes: [Hero] = []
+    private var heroes: [Hero] = []
     private var dataSource: DataSource?
     
     // MARK: - Lifecycle
@@ -41,14 +41,15 @@ final class HeroesListViewController: UITableViewController {
         
         var snapshot = Snapshot()
         snapshot.appendSections([0])
-        snapshot.appendItems(heroes)
         
-        dataSource?.apply(snapshot)
         
-        NetworkModel.shared.getHeroes { result in
+        NetworkModel.shared.getHeroes { [ weak self ]result in
             switch result {
             case let .success(heroes):
                 print(heroes)
+                self?.heroes = heroes
+                snapshot.appendItems(heroes)
+                self?.dataSource?.apply(snapshot)
             case let .failure(error):
                 print(error)
             }
@@ -63,7 +64,7 @@ extension HeroesListViewController {
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath
     ) -> CGFloat {
-        100
+        300
     }
     
     override func tableView(
@@ -71,9 +72,8 @@ extension HeroesListViewController {
         didSelectRowAt indexPath: IndexPath
     ) {
         let hero = heroes[indexPath.row]
-        //let detailViewController = HouseDetailViewController(house: house, isFavourite: isFavourite)
-        //detailViewController.favouriteHouseDelegate = self
-        //navigationController?.show(detailViewController, sender: self)
+        let detailViewController = HeroDetailViewController(hero: hero)
+        navigationController?.show(detailViewController, sender: self)
     }
 }
 
