@@ -19,6 +19,13 @@
 		61B2DAE92CA8CC3D0003D46D /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAE82CA8CC3D0003D46D /* NetworkModel.swift */; };
 		61B2DAEB2CA8D0A60003D46D /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAEA2CA8D0A60003D46D /* Hero.swift */; };
 		61B2DAED2CA8DB590003D46D /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAEC2CA8DB590003D46D /* Transformation.swift */; };
+		61B2DAF12CA8ECFB0003D46D /* UIImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAF02CA8ECFB0003D46D /* UIImageView+Remote.swift */; };
+		61B2DAF92CA8F4040003D46D /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61B2DAF82CA8F4040003D46D /* HeroTableViewCell.xib */; };
+		61B2DAFA2CA8F4040003D46D /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAF72CA8F4040003D46D /* HeroTableViewCell.swift */; };
+		61B2DAFD2CA900BC0003D46D /* HeroesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61B2DAFC2CA900BC0003D46D /* HeroesListViewController.xib */; };
+		61B2DAFE2CA900BC0003D46D /* HeroesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAFB2CA900BC0003D46D /* HeroesListViewController.swift */; };
+		61B2DB012CA9014C0003D46D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61B2DB002CA9014C0003D46D /* LoginViewController.xib */; };
+		61B2DB022CA9014C0003D46D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2DAFF2CA9014C0003D46D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,13 @@
 		61B2DAE82CA8CC3D0003D46D /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		61B2DAEA2CA8D0A60003D46D /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		61B2DAEC2CA8DB590003D46D /* Transformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
+		61B2DAF02CA8ECFB0003D46D /* UIImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImageView+Remote.swift"; path = "KCDragonball/Models/UIImageView+Remote.swift"; sourceTree = SOURCE_ROOT; };
+		61B2DAF72CA8F4040003D46D /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		61B2DAF82CA8F4040003D46D /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
+		61B2DAFB2CA900BC0003D46D /* HeroesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewController.swift; sourceTree = "<group>"; };
+		61B2DAFC2CA900BC0003D46D /* HeroesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesListViewController.xib; sourceTree = "<group>"; };
+		61B2DAFF2CA9014C0003D46D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		61B2DB002CA9014C0003D46D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +119,8 @@
 		61B2DAB12CA8AA8A0003D46D /* KCDragonball */ = {
 			isa = PBXGroup;
 			children = (
+				61B2DAF22CA8F0100003D46D /* Presentation */,
+				61B2DAEF2CA8ECC10003D46D /* Extensions */,
 				61B2DAE22CA8B16A0003D46D /* Models */,
 				61B2DAB22CA8AA8A0003D46D /* AppDelegate.swift */,
 				61B2DAB42CA8AA8A0003D46D /* SceneDelegate.swift */,
@@ -142,6 +158,43 @@
 				61B2DAEC2CA8DB590003D46D /* Transformation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		61B2DAEF2CA8ECC10003D46D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				61B2DAF02CA8ECFB0003D46D /* UIImageView+Remote.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		61B2DAF22CA8F0100003D46D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				61B2DAF32CA8F0210003D46D /* View */,
+				61B2DAF42CA8F0310003D46D /* Controller */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		61B2DAF32CA8F0210003D46D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61B2DAF72CA8F4040003D46D /* HeroTableViewCell.swift */,
+				61B2DAF82CA8F4040003D46D /* HeroTableViewCell.xib */,
+				61B2DAFC2CA900BC0003D46D /* HeroesListViewController.xib */,
+				61B2DB002CA9014C0003D46D /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61B2DAF42CA8F0310003D46D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				61B2DAFB2CA900BC0003D46D /* HeroesListViewController.swift */,
+				61B2DAFF2CA9014C0003D46D /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,8 +301,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B2DB012CA9014C0003D46D /* LoginViewController.xib in Resources */,
 				61B2DABC2CA8AA8D0003D46D /* Assets.xcassets in Resources */,
 				61B2DABF2CA8AA8D0003D46D /* Base in Resources */,
+				61B2DAFD2CA900BC0003D46D /* HeroesListViewController.xib in Resources */,
+				61B2DAF92CA8F4040003D46D /* HeroTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,13 +330,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B2DAFE2CA900BC0003D46D /* HeroesListViewController.swift in Sources */,
 				61B2DAB72CA8AA8A0003D46D /* ViewController.swift in Sources */,
 				61B2DAB32CA8AA8A0003D46D /* AppDelegate.swift in Sources */,
 				61B2DAB52CA8AA8A0003D46D /* SceneDelegate.swift in Sources */,
 				61B2DAE92CA8CC3D0003D46D /* NetworkModel.swift in Sources */,
 				61B2DAE42CA8B19A0003D46D /* APIClient.swift in Sources */,
 				61B2DAED2CA8DB590003D46D /* Transformation.swift in Sources */,
+				61B2DAF12CA8ECFB0003D46D /* UIImageView+Remote.swift in Sources */,
 				61B2DAEB2CA8D0A60003D46D /* Hero.swift in Sources */,
+				61B2DAFA2CA8F4040003D46D /* HeroTableViewCell.swift in Sources */,
+				61B2DB022CA9014C0003D46D /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
