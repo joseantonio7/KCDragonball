@@ -15,7 +15,7 @@ final class NetworkModel {
         components.host = "dragonball.keepcoding.education"
         return components
     }
-    private var token:String?
+    var token:String?
     private let client :APIClientProtocol
     
     init(client: APIClientProtocol = APIClient()) {

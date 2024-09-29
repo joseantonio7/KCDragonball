@@ -82,7 +82,8 @@ final class TransformationsListViewController: UITableViewController {
             _ tableView: UITableView,
             didSelectRowAt indexPath: IndexPath
         ) {
-            let transformation = transformations[indexPath.row]
+            // TODO: - transformation detail
+ //           let transformation = transformations[indexPath.row]
 //            let detailViewController = TransformationDetailViewController(transformation: transformation)
  //           navigationController?.show(detailViewController, sender: self)
         }

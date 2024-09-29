@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HeroDetailViewController: UIViewController {
+final class HeroDetailViewController: UIViewController {
 
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var label: UILabel!
