@@ -20,7 +20,6 @@ extension UIImageView {
         url: URL,
         completion: @escaping (UIImage?) -> Void
     ) {
-        // No voy a manejar errores para simplificar el ejercicio
         URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, _ in
             guard let data, let image = UIImage(data: data) else {
                 completion(nil)

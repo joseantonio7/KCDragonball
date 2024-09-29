@@ -22,18 +22,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pfL-Nk-tUx">
-                    <rect key="frame" x="0.0" y="59" width="393" height="377"/>
+                    <rect key="frame" x="0.0" y="59" width="392" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="8fu-FH-TnP"/>
+                    </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4sD-wk-7VD">
-                    <rect key="frame" x="27" y="452" width="299" height="21"/>
+                    <rect key="frame" x="119" y="367" width="154" height="47"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1a2-uD-CZH" userLabel="Description Label">
-                    <rect key="frame" x="0.0" y="481" width="393" height="371"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1a2-uD-CZH" userLabel="Description Label">
+                    <rect key="frame" x="46" y="422" width="300" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="JBO-tU-n2Z"/>
+                        <constraint firstAttribute="width" constant="300" id="yCU-bV-vAq"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -42,12 +48,13 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="pfL-Nk-tUx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5ru-Ei-7ub"/>
-                <constraint firstItem="4sD-wk-7VD" firstAttribute="top" secondItem="pfL-Nk-tUx" secondAttribute="bottom" constant="16" id="Qo2-hT-BbW"/>
-                <constraint firstAttribute="trailing" secondItem="pfL-Nk-tUx" secondAttribute="trailing" id="giU-dN-3wV"/>
-                <constraint firstItem="pfL-Nk-tUx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qmR-XC-4p7"/>
+                <constraint firstItem="1a2-uD-CZH" firstAttribute="top" secondItem="4sD-wk-7VD" secondAttribute="bottom" constant="8" symbolic="YES" id="4gp-hU-mxY"/>
+                <constraint firstItem="pfL-Nk-tUx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Wkr-7t-HVG"/>
+                <constraint firstItem="1a2-uD-CZH" firstAttribute="centerX" secondItem="4sD-wk-7VD" secondAttribute="centerX" id="Wxd-Pr-7dQ"/>
+                <constraint firstItem="1a2-uD-CZH" firstAttribute="centerX" secondItem="pfL-Nk-tUx" secondAttribute="centerX" id="cCp-MQ-eAX"/>
+                <constraint firstItem="pfL-Nk-tUx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ztZ-eO-hZP"/>
             </constraints>
-            <point key="canvasLocation" x="26.717557251908396" y="19.718309859154932"/>
+            <point key="canvasLocation" x="8.3969465648854964" y="23.239436619718312"/>
         </view>
     </objects>
     <resources>

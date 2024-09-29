@@ -13,13 +13,7 @@ class HeroTableViewCell: UITableViewCell {
     @IBOutlet weak var heroLabel: UILabel!
     @IBOutlet weak var heroDescriptionLabel: UILabel!
     static let identifier = String(describing: HeroTableViewCell.self)
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
 
-        // TODO: config selected
-    }
-    
     func configure(with hero: Hero) {
 
         heroLabel.text = hero.name
